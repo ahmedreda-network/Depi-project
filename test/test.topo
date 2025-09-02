@@ -21,12 +21,6 @@
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="D461ECA1-91BA-4a6c-93D1-AE8E8140EF68" name="AR2" poe="0" model="AR201" settings="" system_mac="00-E0-FC-AB-22-D3" com_port="2003" bootmode="1" cx="342.000000" cy="45.000000" edit_left="369" edit_top="99">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
-                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
-            </slot>
-        </dev>
     </devices>
     <lines>
         <line srcDeviceID="A9BEC218-0B48-4579-85AD-432E027E4544" destDeviceID="E79186D9-4BBF-4d9e-A56F-3A6AF83ADACE">
@@ -34,12 +28,6 @@
         </line>
         <line srcDeviceID="A9BEC218-0B48-4579-85AD-432E027E4544" destDeviceID="4F611E64-AE2B-476b-B125-4142A37B0F06">
             <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="208.731995" srcBoundRect_Y="165.595490" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="209.268005" tarBoundRect_Y="167.404510" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
-        </line>
-        <line srcDeviceID="4F611E64-AE2B-476b-B125-4142A37B0F06" destDeviceID="D461ECA1-91BA-4a6c-93D1-AE8E8140EF68">
-            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="238.200958" srcBoundRect_Y="113.064819" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="327.799042" tarBoundRect_Y="84.935181" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
-        </line>
-        <line srcDeviceID="D461ECA1-91BA-4a6c-93D1-AE8E8140EF68" destDeviceID="E79186D9-4BBF-4d9e-A56F-3A6AF83ADACE">
-            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="382.214630" srcBoundRect_Y="113.112175" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="391.785370" tarBoundRect_Y="142.887817" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
         </line>
     </lines>
     <shapes />

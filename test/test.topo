@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="4F611E64-AE2B-476b-B125-4142A37B0F06" name="AR1" poe="0" model="AR201" settings="" system_mac="00-E0-FC-FE-52-6D" com_port="2000" bootmode="1" cx="243.000000" cy="98.000000" edit_left="270" edit_top="152">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="E79186D9-4BBF-4d9e-A56F-3A6AF83ADACE" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-7F-6C-3E" com_port="2001" bootmode="1" cx="378.000000" cy="157.000000" edit_left="405" edit_top="211">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="A9BEC218-0B48-4579-85AD-432E027E4544" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-77-78-B2" com_port="2002" bootmode="1" cx="194.000000" cy="180.000000" edit_left="221" edit_top="234">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A9BEC218-0B48-4579-85AD-432E027E4544" destDeviceID="E79186D9-4BBF-4d9e-A56F-3A6AF83ADACE">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="263.850281" srcBoundRect_Y="201.643707" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="362.149719" tarBoundRect_Y="189.356293" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="4F611E64-AE2B-476b-B125-4142A37B0F06" destDeviceID="E79186D9-4BBF-4d9e-A56F-3A6AF83ADACE">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="309.569855" srcBoundRect_Y="142.293488" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="365.430145" tarBoundRect_Y="166.706512" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="A9BEC218-0B48-4579-85AD-432E027E4544" destDeviceID="4F611E64-AE2B-476b-B125-4142A37B0F06">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="243.151352" srcBoundRect_Y="169.930405" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="247.848648" tarBoundRect_Y="162.069595" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
